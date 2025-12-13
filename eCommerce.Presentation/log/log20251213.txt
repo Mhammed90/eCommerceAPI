@@ -1,0 +1,173 @@
+2025-12-13 10:17:10.103 +02:00 [INF] Application is building..................
+2025-12-13 10:17:11.248 +02:00 [INF] User profile is available. Using 'C:\Users\Mohamed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-13 10:17:11.644 +02:00 [INF] Application is running..................
+2025-12-13 10:17:11.930 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-13 10:17:11.931 +02:00 [INF] Hosting environment: Development
+2025-12-13 10:17:11.932 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-12-13 10:17:11.974 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-12-13 10:17:12.056 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 81.4635ms
+2025-12-13 10:17:12.073 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-12-13 10:17:12.175 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 102.095ms
+2025-12-13 10:17:12.273 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui.css - null null
+2025-12-13 10:17:12.275 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui-bundle.js - null null
+2025-12-13 10:17:12.277 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui-standalone-preset.js - null null
+2025-12-13 10:17:12.294 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-13 10:17:12.294 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2025-12-13 10:17:12.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 25.7404ms
+2025-12-13 10:17:12.303 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui.css - 200 152034 text/css 29.9005ms
+2025-12-13 10:17:12.315 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2025-12-13 10:17:12.353 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 77.832ms
+2025-12-13 10:17:12.768 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - null null
+2025-12-13 10:17:12.769 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-13 10:17:12.770 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - 200 628 image/png 1.6421ms
+2025-12-13 10:17:12.850 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:17:12.930 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - eCommerce.Presentation.Controller.CartController.SaveCheckout (eCommerce.Presentation). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-13 10:17:13.018 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 167.7102ms
+2025-12-13 10:17:50.350 +02:00 [INF] Application is shutting down...
+2025-12-13 10:17:57.671 +02:00 [INF] Application is building..................
+2025-12-13 10:17:58.015 +02:00 [INF] User profile is available. Using 'C:\Users\Mohamed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-13 10:17:58.159 +02:00 [INF] Application is running..................
+2025-12-13 10:17:58.253 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-13 10:17:58.253 +02:00 [INF] Hosting environment: Development
+2025-12-13 10:17:58.254 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-12-13 10:17:58.275 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-12-13 10:17:58.313 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 38.6527ms
+2025-12-13 10:17:58.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-12-13 10:17:58.406 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 80.6117ms
+2025-12-13 10:17:58.774 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:17:58.927 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 152.5484ms
+2025-12-13 10:18:20.073 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:18:20.082 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 8.5209ms
+2025-12-13 10:34:17.434 +02:00 [INF] Application is shutting down...
+2025-12-13 10:34:42.406 +02:00 [INF] Application is building..................
+2025-12-13 10:34:42.911 +02:00 [INF] User profile is available. Using 'C:\Users\Mohamed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-13 10:34:43.052 +02:00 [INF] Application is running..................
+2025-12-13 10:34:43.178 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-13 10:34:43.178 +02:00 [INF] Hosting environment: Development
+2025-12-13 10:34:43.178 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-12-13 10:34:43.226 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-12-13 10:34:43.279 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 53.5922ms
+2025-12-13 10:34:43.294 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-12-13 10:34:43.358 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 64.1048ms
+2025-12-13 10:34:43.440 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/swagger-ui.css - null null
+2025-12-13 10:34:43.458 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2025-12-13 10:34:43.458 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/swagger-ui.css - 499 152034 text/css 18.5259ms
+2025-12-13 10:34:43.632 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - null null
+2025-12-13 10:34:43.635 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-13 10:34:43.636 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - 499 628 image/png 3.7151ms
+2025-12-13 10:34:43.704 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:34:43.785 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - eCommerce.Presentation.Controller.CartController.SaveCheckout (eCommerce.Presentation). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-13 10:34:43.824 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 119.6515ms
+2025-12-13 10:36:27.272 +02:00 [INF] Application is shutting down...
+2025-12-13 10:36:38.766 +02:00 [INF] Application is building..................
+2025-12-13 10:36:39.224 +02:00 [ERR] Application failed to start .................. 
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation\Program.cs:line 33
+2025-12-13 10:39:27.739 +02:00 [INF] Application is building..................
+2025-12-13 10:39:28.252 +02:00 [INF] User profile is available. Using 'C:\Users\Mohamed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-13 10:39:28.412 +02:00 [INF] Application is running..................
+2025-12-13 10:39:28.562 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-13 10:39:28.563 +02:00 [INF] Hosting environment: Development
+2025-12-13 10:39:28.563 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-12-13 10:39:28.604 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-12-13 10:39:28.652 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 49.4427ms
+2025-12-13 10:39:28.663 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-12-13 10:39:28.724 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 60.6503ms
+2025-12-13 10:39:28.969 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - null null
+2025-12-13 10:39:28.986 +02:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2025-12-13 10:39:28.987 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/favicon-32x32.png - 499 628 image/png 17.7519ms
+2025-12-13 10:39:29.053 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:39:29.131 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - eCommerce.Presentation.Controller.CartController.SaveCheckout (eCommerce.Presentation). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-13 10:39:29.150 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 97.5525ms
+2025-12-13 10:39:47.558 +02:00 [INF] Application is shutting down...
+2025-12-13 10:39:55.122 +02:00 [INF] Application is building..................
+2025-12-13 10:39:55.353 +02:00 [ERR] Application failed to start .................. 
+System.AggregateException: Some services are not able to be constructed (Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.)
+ ---> System.InvalidOperationException: Error while validating the service descriptor 'ServiceType: eCommerce.Application.Services.Interfaces.Cart.ICartService Lifetime: Scoped ImplementationType: eCommerce.Application.Services.Implementations.Cart.CartService': Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+ ---> System.InvalidOperationException: Unable to resolve service for type 'eCommerce.Domain.Interfaces.Cart.ICart' while attempting to activate 'eCommerce.Application.Services.Implementations.Cart.CartService'.
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateArgumentCallSites(ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain, ParameterInfo[] parameters, Boolean throwIfCallSiteNotFound)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateConstructorCallSite(ResultCache lifetime, ServiceIdentifier serviceIdentifier, Type implementationType, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.CreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.TryCreateExact(ServiceDescriptor descriptor, ServiceIdentifier serviceIdentifier, CallSiteChain callSiteChain, Int32 slot)
+   at Microsoft.Extensions.DependencyInjection.ServiceLookup.CallSiteFactory.GetCallSite(ServiceDescriptor serviceDescriptor, CallSiteChain callSiteChain)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider.ValidateService(ServiceDescriptor descriptor)
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.DependencyInjection.ServiceProvider..ctor(ICollection`1 serviceDescriptors, ServiceProviderOptions options)
+   at Microsoft.Extensions.DependencyInjection.ServiceCollectionContainerBuilderExtensions.BuildServiceProvider(IServiceCollection services, ServiceProviderOptions options)
+   at Microsoft.Extensions.Hosting.HostApplicationBuilder.Build()
+   at Microsoft.AspNetCore.Builder.WebApplicationBuilder.Build()
+   at Program.<Main>$(String[] args) in C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation\Program.cs:line 33
+2025-12-13 10:40:33.851 +02:00 [INF] Application is building..................
+2025-12-13 10:40:34.349 +02:00 [INF] User profile is available. Using 'C:\Users\Mohamed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-13 10:40:34.506 +02:00 [INF] Application is running..................
+2025-12-13 10:40:34.660 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-13 10:40:34.661 +02:00 [INF] Hosting environment: Development
+2025-12-13 10:40:34.661 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-12-13 10:40:34.698 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-12-13 10:40:34.748 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 51.108ms
+2025-12-13 10:40:34.771 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-12-13 10:40:34.855 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 83.2099ms
+2025-12-13 10:40:35.188 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:40:35.331 +02:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - eCommerce.Presentation.Controller.CartController.SaveCheckout (eCommerce.Presentation). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2025-12-13 10:40:35.457 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 500 null text/plain; charset=utf-8 269.3404ms
+2025-12-13 10:41:21.179 +02:00 [INF] Application is shutting down...
+2025-12-13 10:41:29.973 +02:00 [INF] Application is building..................
+2025-12-13 10:41:30.295 +02:00 [INF] User profile is available. Using 'C:\Users\Mohamed\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-12-13 10:41:30.449 +02:00 [INF] Application is running..................
+2025-12-13 10:41:30.538 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-12-13 10:41:30.538 +02:00 [INF] Hosting environment: Development
+2025-12-13 10:41:30.538 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-12-13 10:41:30.562 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-12-13 10:41:30.610 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 48.7224ms
+2025-12-13 10:41:30.617 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-12-13 10:41:30.676 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 58.7447ms
+2025-12-13 10:41:30.987 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-12-13 10:41:31.103 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 116.1087ms
+2025-12-13 10:51:36.326 +02:00 [INF] Application is shutting down...

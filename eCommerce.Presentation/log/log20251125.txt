@@ -1,0 +1,118 @@
+2025-11-25 23:13:00.369 +02:00 [INF] Application is building..................
+2025-11-25 23:13:00.547 +02:00 [INF] Application is running..................
+2025-11-25 23:13:00.615 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-25 23:13:00.620 +02:00 [INF] Hosting environment: Development
+2025-11-25 23:13:00.622 +02:00 [INF] Content root path: C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Presentation
+2025-11-25 23:13:00.644 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger - null null
+2025-11-25 23:13:00.686 +02:00 [INF] HTTP GET /swagger responded 301 in 19.4761 ms
+2025-11-25 23:13:00.713 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger - 301 null null 63.3972ms
+2025-11-25 23:13:00.716 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/index.html - null null
+2025-11-25 23:13:00.806 +02:00 [INF] HTTP GET /swagger/index.html responded 200 in 89.2076 ms
+2025-11-25 23:13:00.809 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/index.html - 200 null text/html;charset=utf-8 92.6568ms
+2025-11-25 23:13:01.129 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-11-25 23:13:01.208 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 78.9478 ms
+2025-11-25 23:13:01.209 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 79.5633ms
+2025-11-25 23:30:25.433 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - null null
+2025-11-25 23:30:25.496 +02:00 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 56.6038 ms
+2025-11-25 23:30:25.496 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 67.0379ms
+2025-11-25 23:30:37.592 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44391/api/Product/all - null null
+2025-11-25 23:30:37.637 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controller.ProductController.GetAll (eCommerce.Presentation)'
+2025-11-25 23:30:37.711 +02:00 [INF] Route matched with {action = "GetAll", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll() on controller eCommerce.Presentation.Controller.ProductController (eCommerce.Presentation).
+2025-11-25 23:30:38.597 +02:00 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2025-11-25 23:30:39.174 +02:00 [INF] Executed DbCommand (62ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [p].[Id], [p].[CategoryId], [p].[Description], [p].[Image], [p].[Name], [p].[Price], [p].[Quantity]
+FROM [Products] AS [p]
+2025-11-25 23:30:39.223 +02:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[eCommerce.Application.DTOs.Product.GetProduct, eCommerce.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-25 23:30:39.267 +02:00 [INF] Executed action eCommerce.Presentation.Controller.ProductController.GetAll (eCommerce.Presentation) in 1551.4689ms
+2025-11-25 23:30:39.267 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controller.ProductController.GetAll (eCommerce.Presentation)'
+2025-11-25 23:30:39.268 +02:00 [INF] HTTP GET /api/Product/all responded 200 in 1672.7924 ms
+2025-11-25 23:30:39.274 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44391/api/Product/all - 200 null application/json; charset=utf-8 1682.1384ms
+2025-11-25 23:31:12.356 +02:00 [INF] Request starting HTTP/2 POST https://localhost:44391/api/Product/add - application/json 157
+2025-11-25 23:31:12.359 +02:00 [INF] Executing endpoint 'eCommerce.Presentation.Controller.ProductController.Create (eCommerce.Presentation)'
+2025-11-25 23:31:12.366 +02:00 [INF] Route matched with {action = "Create", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(eCommerce.Application.DTOs.Product.CreateProduct) on controller eCommerce.Presentation.Controller.ProductController (eCommerce.Presentation).
+2025-11-25 23:31:12.691 +02:00 [ERR] Failed executing DbCommand (119ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (DbType = Guid), @p2='?' (Size = 4000), @p3='?' (Size = 4000), @p4='?' (Size = 4000), @p5='?' (Precision = 18) (Scale = 2) (DbType = Decimal), @p6='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Products] ([Id], [CategoryId], [Description], [Image], [Name], [Price], [Quantity])
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6);
+2025-11-25 23:31:12.723 +02:00 [ERR] An exception occurred in the database while saving changes for context type 'eCommerce.Infrastructure.Data.AppDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "ecommerceAppDb", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__156_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:1cc46abc-7980-4605-84e8-5a7971f8bef8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "ecommerceAppDb", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__156_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:1cc46abc-7980-4605-84e8-5a7971f8bef8
+Error Number:547,State:0,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.<>c__DisplayClass30_0`2.<<ExecuteAsync>b__0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteImplementationAsync[TState,TResult](Func`4 operation, Func`4 verifySucceeded, TState state, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.ExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2025-11-25 23:31:12.731 +02:00 [INF] Executed action eCommerce.Presentation.Controller.ProductController.Create (eCommerce.Presentation) in 365.0225ms
+2025-11-25 23:31:12.733 +02:00 [INF] Executed endpoint 'eCommerce.Presentation.Controller.ProductController.Create (eCommerce.Presentation)'
+2025-11-25 23:31:12.734 +02:00 [ERR] sql exception
+Microsoft.Data.SqlClient.SqlException (0x80131904): The INSERT statement conflicted with the FOREIGN KEY constraint "FK_Products_Categories_CategoryId". The conflict occurred in database "ecommerceAppDb", table "dbo.Categories", column 'Id'.
+The statement has been terminated.
+   at Microsoft.Data.SqlClient.SqlCommand.<>c.<ExecuteDbDataReaderAsync>b__156_0(Task`1 result)
+   at System.Threading.Tasks.ContinuationResultTaskFromResultTask`2.InnerInvoke()
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+--- End of stack trace from previous location ---
+   at System.Threading.ExecutionContext.RunInternal(ExecutionContext executionContext, ContextCallback callback, Object state)
+   at System.Threading.Tasks.Task.ExecuteWithThreadLocal(Task& currentTaskSlot, Thread threadPoolThread)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+ClientConnectionId:1cc46abc-7980-4605-84e8-5a7971f8bef8
+Error Number:547,State:0,Class:16
+2025-11-25 23:31:12.740 +02:00 [INF] HTTP POST /api/Product/add responded 409 in 381.3819 ms
+2025-11-25 23:31:12.741 +02:00 [INF] Request finished HTTP/2 POST https://localhost:44391/api/Product/add - 409 null application/json 384.7319ms
+2025-11-25 23:39:39.987 +02:00 [INF] Application is shutting down...
