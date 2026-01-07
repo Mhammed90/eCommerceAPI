@@ -16,7 +16,7 @@ public class AuthentciationService : IAuthentciationService
     private readonly ITokenManagement _tokenManagement;
     private readonly IUserManagement _userManagement;
     private readonly IRoleManagement _roleManagement;
-    private readonly IAppLogger<AuthenticationService> _logger;
+    private readonly IAppLogger<AuthentciationService> _logger;
     private readonly IMapper _mapper;
     private readonly IValidator<LoginUser> _loginUserValidator;
     private readonly IValidator<CreateUser> _createUserValidator;
@@ -24,7 +24,7 @@ public class AuthentciationService : IAuthentciationService
 
 
     public AuthentciationService(ITokenManagement tokenManagement, IRoleManagement roleManagement,
-        IUserManagement userManagement, IAppLogger<AuthenticationService> logger, IMapper mapper,
+        IUserManagement userManagement, IAppLogger<AuthentciationService> logger, IMapper mapper,
         IValidator<LoginUser> loginUserValidator, IValidator<CreateUser> createUserValidator,
         IValidationService validationService)
     {
@@ -54,7 +54,8 @@ public class AuthentciationService : IAuthentciationService
         {
             return new ServiceResponse
             {
-                Success = false, Message = "Email Address might be exist or unknown error occured."
+                Success = false,
+                Message = "Email Address might be exist or unknown error occured."
             };
         }
 
@@ -80,7 +81,8 @@ public class AuthentciationService : IAuthentciationService
 
         return new ServiceResponse
         {
-            Success = true, Message = "User Created Successfully"
+            Success = true,
+            Message = "User Created Successfully"
         };
     }
 

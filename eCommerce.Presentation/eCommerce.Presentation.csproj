@@ -26,4 +26,8 @@
       <ProjectReference Include="..\eCommerce.Infrastructure\eCommerce.Infrastructure.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\eCommerce.Presentation.sourcelink.json" />
+    </ItemGroup>
+
 </Project>

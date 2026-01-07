@@ -17,3 +17,4 @@ C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Infrastructure\obj\De
 C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Infrastructure\obj\Debug\net8.0\ref\eCommerce.Infrastructure.dll
 C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Infrastructure\bin\Debug\net8.0\eCommerce.Infrastructure.runtimeconfig.json
 C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Infrastructure\obj\Debug\net8.0\eCommerce.Infrastructure.genruntimeconfig.cache
+C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Infrastructure\obj\Debug\net8.0\eCommerce.Infrastructure.sourcelink.json

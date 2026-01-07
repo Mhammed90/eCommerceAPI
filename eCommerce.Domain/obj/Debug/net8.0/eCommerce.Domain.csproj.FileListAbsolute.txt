@@ -10,3 +10,4 @@ C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Domain\obj\Debug\net8
 C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Domain\obj\Debug\net8.0\refint\eCommerce.Domain.dll
 C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.pdb
 C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Domain\obj\Debug\net8.0\ref\eCommerce.Domain.dll
+C:\Users\Mohamed\RiderProjects\ecommerceSolution\eCommerce.Domain\obj\Debug\net8.0\eCommerce.Domain.sourcelink.json

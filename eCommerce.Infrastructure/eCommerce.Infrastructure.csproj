@@ -44,5 +44,9 @@
         <PackageReference Include="Serilog.Sinks.PeriodicBatching" Version="5.0.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Content Include="obj\Debug\net8.0\eCommerce.Infrastructure.sourcelink.json" />
+    </ItemGroup>
+
 
 </Project>
